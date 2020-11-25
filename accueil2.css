@@ -1,0 +1,217 @@
+/* Définition des polices personnalisé */
+
+@font-face {
+    font-family: 'sf_burlington_scriptbold';
+    src: url('fonts/SF_Burlington_Script_Bold-webfont.eot');
+    src: url('fonts/SF_Burlington_Script_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SF_Burlington_Script_Bold-webfont.woff2') format('woff2'),
+         url('fonts/SF_Burlington_Script_Bold-webfont.woff') format('woff'),
+         url('fonts/SF_Burlington_Script_Bold-webfont.ttf') format('truetype'),
+         url('fonts/SF_Burlington_Script_Bold-webfont.svg#sf_burlington_scriptbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'carringtonregular';
+    src: url('fonts/Carrington-webfont.eot');
+    src: url('fonts/Carrington-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Carrington-webfont.woff2') format('woff2'),
+         url('fonts/Carrington-webfont.woff') format('woff'),
+         url('fonts/Carrington-webfont.ttf') format('truetype'),
+         url('fonts/Carrington-webfont.svg#carringtonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amerikaregular';
+    src: url('fonts/AMERIKA_-webfont.eot');
+    src: url('fonts/AMERIKA_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AMERIKA_-webfont.woff2') format('woff2'),
+         url('fonts/AMERIKA_-webfont.woff') format('woff'),
+         url('fonts/AMERIKA_-webfont.ttf') format('truetype'),
+         url('fonts/AMERIKA_-webfont.svg#amerikaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Bold-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* GÉNÉRAL */
+.title
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'open_sansbold';
+}
+
+.text
+{
+    text-align: justify;
+    color: rgb(146, 146, 146);
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+}
+
+/* HOMEPAGE */
+.container::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 101%;
+    width: 100%;
+    background-image: url(images/fond_web.jpg);
+    background-size: cover;
+    filter: blur(3px);
+}
+
+.avatar
+{
+    text-align: center;
+}
+
+#avatar
+{
+    width: 600px;
+    height: auto;
+    margin-bottom: -6rem;
+    margin-top: -2rem;
+}
+
+.infos
+{
+    text-align: center;
+    color: white;
+}
+
+.infos h1
+{  
+    font-family: 'amerikaregular', 'carringtonregular', 'sf_burlington_scriptbold', 'Trebuchet MS', Arial, sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0rem;
+}
+
+.infos h2
+{
+    font-weight: normal;
+    font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
+}
+
+.goto
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#fleches
+{
+    width: 35px;
+    height: auto;
+    transform: rotate(90deg);
+    animation: goto 1500ms backwards infinite alternate ease-out;
+}
+
+@keyframes goto
+{
+    0% {
+        transform: rotate(90deg) translate(0,0);
+    }
+    20% {
+        transform: rotate(90deg) translate(40px, 0);
+    }
+    40% {
+        transform: rotate(90deg) translate(16px, 0);
+    }
+    80% {
+        transform: rotate(90deg) translate(40px, 0);
+    }
+    100% {
+        transform: rotate(90deg) translate(40px, 0);
+    }
+}
+
+/* PAGE A PROPOS DE MOI */
+#section_me
+{
+    display: block;
+    position: absolute;
+    top: 720px;
+    left: 0;
+}
+
+.content_me
+{
+    font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.separation
+{
+    width: 10%;
+    height: 10px;
+    background-color: grey;
+}
+
+#img_lisbonne
+{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* PAGE MON CV */
+#section_cv
+{
+    display: block;
+    position: absolute;
+    top: 1600px;
+    left: 0;
+    width: 100%;
+}
+
+.content_cv
+{
+    font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+.mon_cv
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
