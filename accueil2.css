@@ -65,6 +65,12 @@
 }
 
 /* GÉNÉRAL */
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe1e1;
+}
+
 .title
 {
     font-size: 2rem;
@@ -93,7 +99,7 @@
     width: 100%;
     background-image: url(images/fond_web.jpg);
     background-size: cover;
-    filter: blur(3px);
+    /*filter: blur(3px);*/
 }
 
 .avatar
@@ -164,10 +170,7 @@
 /* PAGE A PROPOS DE MOI */
 #section_me
 {
-    display: block;
-    position: absolute;
-    top: 720px;
-    left: 0;
+    margin-top: 5%;
 }
 
 .content_me
@@ -195,11 +198,7 @@
 /* PAGE MON CV */
 #section_cv
 {
-    display: block;
-    position: absolute;
-    top: 1600px;
-    left: 0;
-    width: 100%;
+    padding-top: 5%;
 }
 
 .content_cv
@@ -214,4 +213,84 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+/* PAGE MES PROJETS */
+#section_projets
+{
+    padding-top: 5%;
+}
+
+.content_projets
+{
+    font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+.projets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projet_box
+{
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+    background-color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#img_projet1
+{
+    width: 80%;
+    height: auto;
+}
+
+#img_projet2
+{
+    width: 80%;
+    height: auto;
+    z-index: -1;
+}
+
+#img_projet3
+{
+    width: 80%;
+    height: auto;
+}
+
+.text_WIP
+{
+    color: white;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.liens_projet
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: white;
+}
+
+/* PAGE ME CONTACTER */
+#section_contact
+{
+    padding-top: 5%;
+}
+
+.content_contact
+{
+    font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
 }
