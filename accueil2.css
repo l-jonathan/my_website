@@ -134,7 +134,7 @@ body{
     font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
 }
 
-.goto
+.goto 
 {
     text-align: center;
     margin-top: 30px;
@@ -148,7 +148,7 @@ body{
     animation: goto 1500ms backwards infinite alternate ease-out;
 }
 
-@keyframes goto
+@keyframes goto /* ANIMATION FLECHE DE REDIRECTION */
 {
     0% {
         transform: rotate(90deg) translate(0,0);
@@ -178,7 +178,7 @@ body{
     font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
     width: 80%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .separation
@@ -264,14 +264,6 @@ body{
     height: auto;
 }
 
-.text_WIP
-{
-    color: white;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
 .liens_projet
 {
     display: flex;
@@ -293,4 +285,25 @@ body{
     font-family: 'open_sanslight', 'Courier New', Arial, Helvetica, sans-serif;
     width: 80%;
     margin: auto;
+}
+
+/**** RESPONSIVE PETITS ÉCRANS ****/
+@media all and (max-width: 1024px)
+{
+    /* MODIFICATION TAILLE AVATAR */
+    .avatar
+    {
+        display: none;
+    }
+
+    /* MODIFICATION DIRECTION CASES PROJETS */
+    .projets{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projet_box
+    {
+        width: 80%;
+        
+    }
 }
